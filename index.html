@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHD Simulátor - Iveco Crossway LE CITY 12M ELEC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="hud">
+            <div class="hud-top">
+                <div class="hud-item">
+                    <span class="label">RYCHLOST:</span>
+                    <span class="value" id="speedometer">0 km/h</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">LINKA:</span>
+                    <span class="value" id="lineNumber">12</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">ČAS:</span>
+                    <span class="value" id="timeDisplay">00:00</span>
+                </div>
+            </div>
+            <div class="hud-middle">
+                <div class="hud-item">
+                    <span class="label">CESTUJÍCÍCH:</span>
+                    <span class="value" id="passengers">0 / 45</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">STAV BATERIE:</span>
+                    <span class="value" id="battery">100%</span>
+                </div>
+                <div class="hud-item">
+                    <span class="label">ZPOŽDĚNÍ:</span>
+                    <span class="value" id="delay">0 min</span>
+                </div>
+            </div>
+            <div class="hud-bottom">
+                <div id="status" class="status">Připraveno k odjezdu</div>
+            </div>
+        </div>
+        <div id="controls">
+            <p><strong>Ovládání:</strong></p>
+            <p>↑/W - Plyn | ↓/S - Brzda | ←/A - Vlevo | →/D - Vpravo</p>
+            <p>SPACE - Otevřít/Zavřít dveře | K - Klakson | P - Pozastavit</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
